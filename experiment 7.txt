@@ -1,0 +1,46 @@
+mysql> select * from school
+    -> order by class;
++--------+------+-------+
+| rollno | name | class |
++--------+------+-------+
+|    995 | tom  |     4 |
+|    756 | hub  |     6 |
+|    126 | axe  |     8 |
+|    547 | anto |     9 |
+|    657 | jio  |    10 |
++--------+------+-------+
+5 rows in set (0.00 sec)
+
+mysql> select * from school
+    -> group by rollno;
++--------+------+-------+
+| rollno | name | class |
++--------+------+-------+
+|    126 | axe  |     8 |
+|    547 | anto |     9 |
+|    657 | jio  |    10 |
+|    756 | hub  |     6 |
+|    995 | tom  |     4 |
++--------+------+-------+
+5 rows in set (0.00 sec)
+
+mysql> select * from school
+    -> group by rollno
+    -> having rollno>=600;
++--------+------+-------+
+| rollno | name | class |
++--------+------+-------+
+|    657 | jio  |    10 |
+|    756 | hub  |     6 |
+|    995 | tom  |     4 |
++--------+------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select * from school
+    -> having name='axe';
++--------+------+-------+
+| rollno | name | class |
++--------+------+-------+
+|    126 | axe  |     8 |
++--------+------+-------+
+1 row in set (0.00 sec)
