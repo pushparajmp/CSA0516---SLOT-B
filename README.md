@@ -14,7 +14,7 @@ SELECT THE VARIOUS CAUSE (BETWEEN ,IN ,AGGREGATE FUNCTION) - (https://github.com
 ## EXPERIMENT 7:
 SELECT THE VARIOUS CAUSE (GROUP BY ,HAVING ,ORDER BY) - (https://github.com/pushparajmp/CSA0516---SLOT-B/blob/main/experiment%207.txt)
 ## EXPERIMENT 8:
-SUBQUERY & CORRELATED QUERY - ()
+SUBQUERY & CORRELATED QUERY - (https://github.com/pushparajmp/CSA0516---SLOT-B/blob/main/experiment%208.txt)
 ## EXPERIMENT 9:
 JOINS (EQUIJOIN,INERJOIN,OUTERJOIN) - (https://github.com/pushparajmp/CSA0516---SLOT-B/blob/main/experiment%209.txt)
 ## EXPERIMENT 10:
