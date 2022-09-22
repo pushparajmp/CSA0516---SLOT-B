@@ -1,0 +1,71 @@
+mysql> select * from family
+    ->  where gradute IN('degree','BE');
++-----------+------+---------+--------------+----------+
+| names     | age  | gradute | relationship | job      |
++-----------+------+---------+--------------+----------+
+| pushparaj |   19 |  BTECH  | elder        | studying |
+| mahesh    |   18 |  BE     | brother      | studying |
++-----------+------+---------+--------------+----------+
+2 rows in set (0.00 sec)
+
+mysql> select * from family
+    -> where gradute BETWEEN 'BTECH' AND 'BBA';
++-----------+------+---------+--------------+----------+
+| names     | age  | gradute | relationship | job      |
++-----------+------+---------+--------------+----------+
+| PUSHPARAJ |   18 | BTECH   | elder        | studying |
+| mahesh    |   19 | BE      | brother      | studying |     |
+| lakshmi   |   24 | BBA     | sisinlaw     | job      |
++-----------+------+---------+--------------+----------+
+3 rows in set (0.00 sec)
+
+mysql>  select * from family
+    ->  where gradute NOT BETWEEN 'degree' AND 'mca';
++--------+------+---------+--------------+----------+
+| names  | age  | gradute | relationship | job      |
++--------+------+---------+--------------+----------+
+| mahesh |   19 | BE      | brother      | studying |
++--------+------+---------+--------------+----------+
+1 row in set (0.00 sec)
+
+
+mysql>  select count(job) from family;
++------------+
+| count(job) |
++------------+
+|          3 |
++------------+
+1 row in set (0.00 sec)
+
+
+mysql>  select sum(age)as total_sum from family;
++-----------+
+| total_sum |
++-----------+
+|       112 |
++-----------+
+1 row in set (0.00 sec)
+
+mysql> select max(age) from family;
++----------+
+| max(age) |
++----------+
+|       45 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select min(age) from family;
++----------+
+| min(age) |
++----------+
+|       18 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select avg(age) from family;
++----------+
+| avg(age) |
++----------+
+|  28.0000 |
++----------+
+1 row in set (0.00 sec)
