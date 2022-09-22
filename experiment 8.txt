@@ -1,0 +1,65 @@
+mysql> select * from std;
++------+------------+-----------+------+-----------+-----------+
+| ID   | firstname  | lastname  | age  | subject   | games     |
++------+------------+-----------+------+-----------+-----------+
+|    1 | pushparaj  | modi      |   18 | maths     | badminton |
+|   88 | mahesh     | rajputh   |   19 | science   | chess     |
+|  213 | vinay      | kuyya     |   19 | maths     | football  |
+|   14 | yuvraj     | marvadi   |   15 | economics | badminton |
+|   62 | moksha     | sagar     |   18 | maths     | cricket   |
++------+------------+-----------+------+-----------+-----------+
+5 rows in set (0.00 sec)
+
+mysql> select ID,first_name
+    -> from std
+    -> where firstname IN(select firstname from std where subject='maths');
++------+------------+
+| ID   | first_name |
++------+------------+
+|    1 | pushparaj  |
+|  213 | vinay      |
+|   62 | moksha     |
++------+------------+
+3 rows in set (0.00 sec)
+
+mysql> desc test;
++-------+----------+------+-----+---------+-------+
+| Field | Type     | Null | Key | Default | Extra |
++-------+----------+------+-----+---------+-------+
+| id    | int(3)   | YES  |     | NULL    |       |
+| name  | char(20) | YES  |     | NULL    |       |
++-------+----------+------+-----+---------+-------+
+2 rows in set (0.01 sec)
+            '
+mysql> insert into test(id,name)
+    -> select ID,firstname
+    -> from std where games='badminton';
+Query OK, 2 rows affected (0.05 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> select*from test;
++------+-----------+
+| id   | name      |
++------+-----------+
+|  1   | pushparaj |
+|  14  | yuvraj    |
++------+-----------+
+2 rows in set (0.00 sec)
+
+mysql> select id,(select name from test where id=213) as name,age,subject,games from std where id=213;
++------+---------+------+---------+
+| id   | name    | age  | subject |
++------+---------+------+---------+
+|  213 | vinay   |    19| maths   |
++------+---------+------+---------+
+1 row in set (0.04 sec)
+
+mysql> select*from std where age>=(select avg(age)from std);
++------+------------+-----------+------+-----------+-----------+
+| ID   | first_name | last_name | age  | subject   | games     |
++------+------------+-----------+------+-----------+-----------+
+|   34 | mahesh     | rajputh   |   19 | science   | chess     |
+|   99 | yuvraj     | marvadi   |   15 | economics | badminton |
+|   50 | moksha     | sagar     |   18 | maths     | cricket   |
++------+------------+-----------+------+-----------+-----------+
+3 rows in set (0.08 sec)
