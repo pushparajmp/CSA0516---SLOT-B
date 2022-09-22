@@ -16,7 +16,7 @@ SELECT THE VARIOUS CAUSE (GROUP BY ,HAVING ,ORDER BY) - (https://github.com/push
 ## EXPERIMENT 8:
 SUBQUERY & CORRELATED QUERY - ()
 ## EXPERIMENT 9:
-JOINS (EQUIJOIN,INERJOIN,OUTERJOIN) - ()
+JOINS (EQUIJOIN,INERJOIN,OUTERJOIN) - (https://github.com/pushparajmp/CSA0516---SLOT-B/blob/main/experiment%209.txt)
 ## EXPERIMENT 10:
 VIEW , INDEX , SEQUENCE - (https://github.com/pushparajmp/CSA0516---SLOT-B/blob/main/experiment%2010.txt)
 ## EXPERIMENT 22:
