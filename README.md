@@ -29,6 +29,10 @@ TCL COMMANDS (commit,rollback,savepoint) - (https://github.com/pushparajmp/CSA05
 DCL COMMANDS (GRANT , REVOKE) - ()
 ## EXPERIMENT 15:
 HIGH LEVEL PROGRAMMING EXTENSION(PROCEDURE) - (https://github.com/pushparajmp/CSA0516---SLOT-B/blob/main/EXPREMENT%2015.txt)
+## EXPERIMENT 17:
+SQL STRING FUNCTION(REPEAT,REPLICATE) - ()
+## EXPERIMENT 18:
+TCL COMMANDS (COMMIT,ROLLBACK) - ()
 ## EXPERIMENT 19:
 DATABASE CONNECTIVITY (USING SIMPLE MYSQL) - (https://github.com/pushparajmp/CSA0516---SLOT-B/blob/main/experiment%2019.txt)
 ## EXPERIMENT 20:
