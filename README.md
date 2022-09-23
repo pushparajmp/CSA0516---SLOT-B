@@ -26,7 +26,7 @@ SIMPLE PROGRAMMING EXECISES USING REPEAT , WHILE - (https://github.com/pushparaj
 ## EXPERIMENT 13:
 TCL COMMANDS (commit,rollback,savepoint) - (https://github.com/pushparajmp/CSA0516---SLOT-B/blob/main/experiment%2013.txt)
 ## EXPERIMENT 14:
-DCL COMMANDS (GRANT , REVOKE) - ()
+DCL COMMANDS (GRANT , REVOKE) - (https://github.com/pushparajmp/CSA0516---SLOT-B/blob/main/experiment%2014.txt)
 ## EXPERIMENT 15:
 HIGH LEVEL PROGRAMMING EXTENSION(PROCEDURE) - (https://github.com/pushparajmp/CSA0516---SLOT-B/blob/main/EXPREMENT%2015.txt)
 ## EXPERIMENT 17:
